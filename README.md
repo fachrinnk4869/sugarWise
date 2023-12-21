@@ -28,7 +28,7 @@ Team Member:
 
 Clone this repository to your local machine. Use the following command in your terminal:
 ```
-git clone -b mobille_dev https://github.com/fachrinnk4869/sugarWise.git
+git clone -b mobile_dev https://github.com/fachrinnk4869/sugarWise.git
 ```
 
 ## Application
