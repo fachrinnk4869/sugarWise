@@ -29,6 +29,7 @@ git clone -b mobille_dev https://github.com/fachrinnk4869/sugarWise.git
 ```
 
 2. 	Install the Android Studio [here](https://developer.android.com/studio)
+
 &nbsp;Note: This step assumes you have android studio installed. If not, you may need to download and install them first.
 
 ## Usage
