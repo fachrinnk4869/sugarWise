@@ -25,20 +25,11 @@ Follow these steps to run this project:
 
 1. Clone this repository to your local machine. Use the following command in your terminal:
 ```
-git clone https://github.com/mdpm21/ficomsite.git
+git clone -b mobille_dev https://github.com/fachrinnk4869/sugarWise.git
 ```
 
-2. 	Install the required Python dependencies. In your terminal, navigate to the project directory and run:
-```
-pip install -r requirements.txt
-```
-&nbsp;Note: This step assumes you have Python and pip installed. If not, you may need to download and install them first.
-
-3. 	Run the Flask application:
-```
-python main.py
-```
-&nbsp;Note: After running this command, Flask will provide a local URL that you can use to view the web application in your browser.
+2. 	Install the Android Studio [here](https://developer.android.com/studio)
+&nbsp;Note: This step assumes you have android studio installed. If not, you may need to download and install them first.
 
 ## Usage
 1. Open the web application in your browser using the URL provided by Flask.
