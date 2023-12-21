@@ -24,15 +24,16 @@ Team Member:
 * CameraX
 * Jetpack ViewModel/LiveData
 
-## Setup
-Follow these steps to run this project:
+## Clone Repository
 
-1. Clone this repository to your local machine. Use the following command in your terminal:
+Clone this repository to your local machine. Use the following command in your terminal:
 ```
 git clone -b mobille_dev https://github.com/fachrinnk4869/sugarWise.git
 ```
 
-2. Download APK [here]([https://developer.android.com/studio](https://drive.google.com/file/d/19y7v32eq2ADw6MM80plG-flwqBE6a943/view?usp=sharing))
+## Application
+
+Download APK [here]([https://developer.android.com/studio](https://drive.google.com/file/d/19y7v32eq2ADw6MM80plG-flwqBE6a943/view?usp=sharing))
 
 ## Usage
 1. The homepage will statistics and list food that hace been eaten.
