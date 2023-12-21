@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="start"
+        android:id="@+id/toolbarToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:contentInsetStart="0dp"
+        style="@style/groupStylebluegray_500">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_height="@dimen/_31pxh"
+            android:layout_width="@dimen/_31pxh"
+            android:src="@drawable/img_arrow3_white_a700"
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="@dimen/_30pxh"/>
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Camera"
+            style="@style/txtRobotoromanbold40"
+            tools:text="@string/Camera"
+            android:layout_marginStart="@dimen/_20pxh"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbarToolbar"
+        android:layout_marginTop="@dimen/_20pxh">
+
+        <ImageView
+            android:id="@+id/iv_story"
+            android:layout_width="325dp"
+            android:layout_height="325dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_camera_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="@string/Camera"
+                style="@style/btnSolidRounded_2"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_gallery_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Gallery"
+                style="@style/btnSolidRounded_2"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add"
+            style="@style/btnSolidRounded_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/upload" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65pxh"
+        android:background="@drawable/rectangle_bg_bluegray_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/home_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCamera"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/btnCamera"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/photo_camera"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHome"
+            app:layout_constraintEnd_toStartOf="@id/btnStatistic"
+            app:layout_constraintBottom_toTopOf="@id/textCamera"/>
+
+        <TextView
+            android:id="@+id/textCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtRobotoromanbold16"
+            android:text="Camera"
+            app:layout_constraintTop_toBottomOf="@id/btnCamera"
+            app:layout_constraintStart_toStartOf="@id/btnCamera"
+            app:layout_constraintEnd_toEndOf="@id/btnCamera"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/btnStatistic"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/analytics_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnCamera"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

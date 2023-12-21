@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.statistic.StatisticActivity">
+
+    <ImageView
+        android:id="@+id/statistic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/statistics"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65pxh"
+        android:background="@drawable/rectangle_bg_bluegray_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/home_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCamera"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/btnCamera"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/photo_camera_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHome"
+            app:layout_constraintEnd_toStartOf="@id/btnStatistic"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/btnStatistic"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/analytics"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnCamera"
+            app:layout_constraintBottom_toTopOf="@id/textStatistic"/>
+
+        <TextView
+            android:id="@+id/textStatistic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtRobotoromanbold16"
+            android:text="Statistic"
+            app:layout_constraintTop_toBottomOf="@id/btnStatistic"
+            app:layout_constraintStart_toStartOf="@id/btnStatistic"
+            app:layout_constraintEnd_toEndOf="@id/btnStatistic"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

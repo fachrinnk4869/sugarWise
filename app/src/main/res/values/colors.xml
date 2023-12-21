@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    // green color
+    <color name="green_1">#529075</color>
+    <color name="green_2">#6AB695</color>
+    <color name="green_3">#D4E3DC</color>
+    // red colour
+    <color name="red_1">#EF5A56</color>
+    <color name="red_2">#FA9884</color>
+    <color name="red_3">#FFDDD6</color>
+    // gray color
+    <color name="grey_1">#58626A</color>
+    <color name="grey_2">#8999A5</color>
+    <color name="grey_3">#ADC1D1</color>
+    // blue color
+    <color name="blue_1">#2CB1FF</color>
+    <color name="blue_2">#57CDF3</color>
+    <color name="blue_3">#8DDAF3</color>
+
+    <color name="green_300">#6ab695</color>
+    <color name="black_900_7f">#7f000000</color>
+    <color name="gray_402">#b0b0b0</color>
+    <color name="gray_700">#58626a</color>
+    <color name="gray_400">#b8b8b8</color>
+    <color name="deep_orange_A100">#fa9884</color>
+    <color name="black_900_0a">#0a000000</color>
+    <color name="gray_401">#b9b9b9</color>
+    <color name="orange_A200">#f69c53</color>
+    <color name="gray_800">#464646</color>
+    <color name="bluegray_500_3f">#3f529075</color>
+    <color name="gray_900">#262626</color>
+    <color name="bluegray_100">#d9d9d9</color>
+    <color name="red_400">#ef5a56</color>
+    <color name="light_blue_400">#2cb1ff</color>
+    <color name="gray_200">#ededee</color>
+    <color name="black_900_3f">#3f000000</color>
+    <color name="bluegray_900">#33363f</color>
+    <color name="bluegray_500">#529075</color>
+    <color name="black_900">#000000</color>
+    <color name="bluegray_300">#8999a5</color>
+    <color name="white_A700">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#00BFFF</color>
+</resources>

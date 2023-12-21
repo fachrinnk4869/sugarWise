@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="start"
+        android:id="@+id/toolbarToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:contentInsetStart="0dp"
+        style="@style/groupStylebluegray_500">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_height="@dimen/_31pxh"
+            android:layout_width="@dimen/_31pxh"
+            android:src="@drawable/img_arrow3_white_a700"
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="@dimen/_30pxh"/>
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_result"
+            style="@style/txtRobotoromanbold40"
+            tools:text="@string/lbl_result"
+            android:layout_marginStart="@dimen/_20pxh"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarToolbar">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:id="@+id/linearScanResultTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarToolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            style="@style/groupStylewhite_A700">
+
+            <ImageView
+                android:gravity="center_horizontal"
+                android:id="@+id/imageTripleChocolat"
+                android:layout_height="@dimen/_250pxh"
+                android:layout_width="@dimen/_250pxh"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_triplechocolat"/>
+
+            <TextView
+                android:ellipsize="end"
+                android:id="@+id/txtDonut"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="@string/lbl_donut"
+                style="@style/txtMontserratromanbold24"
+                tools:text="@string/lbl_donut"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Sugar" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textSize="14sp"
+                style="@style/btnSolidRounded_7"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Fat" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="60%"
+                android:textSize="14sp"
+                style="@style/btnSolidRounded_8"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/protein" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="70%"
+                android:textSize="14sp"
+                style="@style/btnSolidRounded_9"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@+id/linearRowquantity"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30pxh"
+                android:layout_marginStart="@dimen/_30pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/txtQuantity"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_5pxh"
+                    android:singleLine="true"
+                    android:text="@string/lbl_quantity"
+                    style="@style/txtMontserratromansemibold20"
+                    tools:text="@string/lbl_quantity"/>
+
+                <EditText
+                    android:id="@+id/etQuantity"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:hint="2"
+                    android:gravity="center"
+                    android:textSize="@dimen/_35pxh"
+                    android:textColorHint="@color/gray_400"
+                    android:textColor="@color/black"
+                    style="@style/etSolidRounded">
+                </EditText>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/btnAddToDiaryLogOne"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/msg_add_to_diary"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_2"
+                tools:text="@string/msg_add_to_diary"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/btnBackToHome"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_back_to_home"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_3"
+                tools:text="@string/lbl_back_to_home"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

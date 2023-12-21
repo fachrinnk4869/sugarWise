@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.HomeActivity">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/img_subtract_white_a700">
+        
+        <ImageView
+            android:id="@+id/topBarLogo"
+            android:layout_width="@dimen/_45pxh"
+            android:layout_height="@dimen/_50pxh"
+            android:src="@drawable/img_newlogo3"/>
+
+        <ImageView
+            android:id="@+id/account"
+            android:layout_width="@dimen/_45pxh"
+            android:layout_height="@dimen/_45pxh"
+            android:src="@drawable/img_usercicrleduo"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_gravity="end|center_vertical"/>
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="@dimen/_45pxh"
+            android:layout_height="@dimen/_45pxh"
+            android:src="@drawable/notifications"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_gravity="end|center_vertical"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bgStatisticHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_frame77"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- ================= SUGAAR =====================-->
+        <!-- Lingkaran -->
+        <View
+            android:id="@+id/circleSugar"
+            android:layout_width="@dimen/_80pxh"
+            android:layout_height="@dimen/_80pxh"
+            style="@style/txtSolidCircle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/circleFat"
+            android:layout_marginTop="@dimen/_20pxh"/>
+
+        <!-- Teks pertama "20" -->
+        <TextView
+            android:id="@+id/textSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/robotoromanbold"
+            android:layout_marginStart="@dimen/_5pxh"
+            app:layout_constraintTop_toTopOf="@id/circleSugar"
+            app:layout_constraintStart_toStartOf="@id/circleSugar"
+            app:layout_constraintEnd_toStartOf="@id/textSugarEnd"
+            app:layout_constraintBottom_toBottomOf="@id/circleSugar"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <!-- Teks kedua "/50" -->
+        <TextView
+            android:id="@+id/textSugarEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/50g"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/robotoromanbold"
+            android:layout_marginEnd="@dimen/_5pxh"
+            app:layout_constraintTop_toTopOf="@id/circleSugar"
+            app:layout_constraintStart_toEndOf="@id/textSugar"
+            app:layout_constraintEnd_toEndOf="@id/circleSugar"
+            app:layout_constraintBottom_toBottomOf="@id/circleSugar"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <!-- ================= Fat =====================-->
+        <!-- Lingkaran -->
+        <View
+            android:id="@+id/circleFat"
+            android:layout_width="@dimen/_80pxh"
+            android:layout_height="@dimen/_80pxh"
+            style="@style/txtSolidCircle_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/circleSugar"
+            app:layout_constraintEnd_toStartOf="@id/circleProtein"
+            android:layout_marginTop="@dimen/_20pxh"/>
+
+        <!-- Teks pertama "20" -->
+        <TextView
+            android:id="@+id/textFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/robotoromanbold"
+            android:layout_marginStart="@dimen/_5pxh"
+            app:layout_constraintTop_toTopOf="@id/circleFat"
+            app:layout_constraintStart_toStartOf="@id/circleFat"
+            app:layout_constraintEnd_toStartOf="@id/textFatEnd"
+            app:layout_constraintBottom_toBottomOf="@id/circleFat"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <!-- Teks kedua "/50" -->
+        <TextView
+            android:id="@+id/textFatEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/67g"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/robotoromanbold"
+            android:layout_marginEnd="@dimen/_5pxh"
+            app:layout_constraintTop_toTopOf="@id/circleFat"
+            app:layout_constraintStart_toEndOf="@id/textFat"
+            app:layout_constraintEnd_toEndOf="@id/circleFat"
+            app:layout_constraintBottom_toBottomOf="@id/circleFat"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <!-- ================= Fat =====================-->
+        <!-- Lingkaran -->
+        <View
+            android:id="@+id/circleProtein"
+            android:layout_width="@dimen/_80pxh"
+            android:layout_height="@dimen/_80pxh"
+            style="@style/txtSolidCircle_3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/circleFat"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_20pxh"/>
+
+        <!-- Teks pertama "20" -->
+        <TextView
+            android:id="@+id/textProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/robotoromanbold"
+            android:layout_marginStart="@dimen/_5pxh"
+            app:layout_constraintTop_toTopOf="@id/circleProtein"
+            app:layout_constraintStart_toStartOf="@id/circleProtein"
+            app:layout_constraintEnd_toStartOf="@id/textProteinEnd"
+            app:layout_constraintBottom_toBottomOf="@id/circleProtein"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <!-- Teks kedua "/50" -->
+        <TextView
+            android:id="@+id/textProteinEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/60g"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/robotoromanbold"
+            android:layout_marginEnd="@dimen/_5pxh"
+            app:layout_constraintTop_toTopOf="@id/circleProtein"
+            app:layout_constraintStart_toEndOf="@id/textProtein"
+            app:layout_constraintEnd_toEndOf="@id/circleProtein"
+            app:layout_constraintBottom_toBottomOf="@id/circleProtein"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+        <TextView
+            android:id="@+id/sugarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserratromanmedium"
+            android:layout_marginBottom="@dimen/_20pxh"
+            app:layout_constraintTop_toBottomOf="@id/circleSugar"
+            app:layout_constraintStart_toStartOf="@id/circleSugar"
+            app:layout_constraintEnd_toEndOf="@id/circleSugar"/>
+
+        <TextView
+            android:id="@+id/FatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fat"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserratromanmedium"
+            android:layout_marginBottom="@dimen/_20pxh"
+            app:layout_constraintTop_toBottomOf="@id/circleFat"
+            app:layout_constraintStart_toStartOf="@id/circleFat"
+            app:layout_constraintEnd_toEndOf="@id/circleFat"/>
+
+        <TextView
+            android:id="@+id/ProteinName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protein"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserratromanmedium"
+            android:layout_marginBottom="@dimen/_20pxh"
+            app:layout_constraintTop_toBottomOf="@id/circleProtein"
+            app:layout_constraintStart_toStartOf="@id/circleProtein"
+            app:layout_constraintEnd_toEndOf="@id/circleProtein"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20pxh"
+        app:layout_constraintTop_toBottomOf="@id/bgStatisticHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:layout_width="@dimen/_330pxh"
+            android:layout_height="@dimen/_80pxh"
+            android:background="@drawable/water"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/waterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water"
+            android:textSize="25sp"
+            android:fontFamily="@font/montserratromanmedium"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/waterValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserratromanmedium"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_5pxh"
+            app:layout_constraintTop_toBottomOf="@id/waterText"
+            app:layout_constraintStart_toStartOf="@id/waterText"/>
+
+        <TextView
+            android:id="@+id/waterValueEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/2000 ml"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserratromanmedium"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_5pxh"
+            app:layout_constraintTop_toBottomOf="@id/waterText"
+            app:layout_constraintStart_toEndOf="@id/waterValue"/>
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl"
+            style="@style/txtMontserratromanmedium64"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="@dimen/_20pxh"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/foodConsumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Consumed"
+        style="@style/txtMontserratromansemibold16_1"
+        android:layout_marginTop="@dimen/_10pxh"
+        app:layout_constraintTop_toBottomOf="@id/water"
+        app:layout_constraintStart_toStartOf="@id/water"/>
+
+    <TextView
+        android:id="@+id/addFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Add Food"
+        android:layout_marginTop="@dimen/_10pxh"
+        android:padding="@dimen/_2pxh"
+        style="@style/txtSolidRounded_3"
+        app:layout_constraintEnd_toEndOf="@id/water"
+        app:layout_constraintTop_toBottomOf="@id/water"/>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50pxh"
+        style="@style/txtMontserratromansemibold16_1"
+
+        tools:text="No Food Data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodConsumed"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10pxh"
+        app:layout_constraintStart_toStartOf="@id/water"
+        app:layout_constraintTop_toBottomOf="@id/foodConsumed"
+        app:layout_constraintEnd_toEndOf="@id/water"
+        tools:listitem="@layout/item_list_food"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65pxh"
+        android:background="@drawable/rectangle_bg_bluegray_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/home"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCamera"
+            app:layout_constraintBottom_toTopOf="@id/textHome"/>
+
+        <TextView
+            android:id="@+id/textHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtRobotoromanbold16"
+            android:text="Home"
+            app:layout_constraintTop_toBottomOf="@id/btnHome"
+            app:layout_constraintStart_toStartOf="@id/btnHome"
+            app:layout_constraintEnd_toEndOf="@id/btnHome"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/btnCamera"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/photo_camera_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHome"
+            app:layout_constraintEnd_toStartOf="@id/btnStatistic"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/btnStatistic"
+            android:layout_width="@dimen/_35pxh"
+            android:layout_height="@dimen/_35pxh"
+            android:src="@drawable/analytics_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnCamera"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodConsumed"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

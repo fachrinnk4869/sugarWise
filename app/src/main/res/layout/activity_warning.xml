@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.addFood.WarningActivity">
+
+    <LinearLayout
+        android:id="@+id/linearAlert"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="-349dp">
+
+        <ImageView
+            android:id="@+id/imageSubtract"
+            android:layout_width="@dimen/_201pxh"
+            android:layout_height="@dimen/_177pxh"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_155pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/warning"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/warning" />
+
+        <TextView
+            android:id="@+id/txtWarning"
+            style="@style/txtMontserratromanbold32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/lbl_warning"
+            android:textColor="@color/black"
+            android:textColorHighlight="#1C1313"
+            android:textColorHint="#1C1313"
+            android:textColorLink="#1C1313"
+            tools:text="@string/lbl_warning" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            style="@style/txtMontserratromanmedium12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:gravity="center_horizontal"
+            android:text="@string/msg_consuming_this"
+            android:textColor="@color/black"
+            android:textColorHighlight="#1C1313"
+            android:textColorHint="#1C1313"
+            android:textColorLink="#1C1313"
+            tools:text="@string/msg_consuming_this" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEatAnyway"
+            style="@style/btnSolidRounded_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_41pxh"
+            android:layout_marginRight="@dimen/_15pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_10pxh"
+            android:singleLine="true"
+            android:text="@string/lbl_eat_anyway"
+            android:textAllCaps="false"
+            tools:text="@string/lbl_eat_anyway" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAvoid"
+            style="@style/btnSolidRounded_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_20pxh"
+            android:layout_marginRight="@dimen/_15pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxh"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_10pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_avoid"
+            android:textAllCaps="false"
+            tools:text="@string/lbl_avoid" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

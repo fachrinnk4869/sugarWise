@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.profile.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg_bluegray_500"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_height="@dimen/_31pxh"
+            android:layout_width="@dimen/_31pxh"
+            android:src="@drawable/img_arrow3_white_a700"
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="@dimen/_30pxh"/>
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_profile"
+            style="@style/txtRobotoromanbold40"
+            tools:text="@string/lbl_profile"
+            android:layout_marginStart="@dimen/_20pxh"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160pxh"
+        android:background="@drawable/background_copy"
+        app:layout_constraintTop_toBottomOf="@id/toolbarTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/fotoProfile"
+            android:layout_width="@dimen/_85pxh"
+            android:layout_height="@dimen/_85pxh"
+            android:src="@drawable/img_profilepicture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_park_hanbin"
+            style="@style/txtRobotoromanbold20Bold"
+            android:singleLine="true"
+            app:layout_constraintTop_toBottomOf="@id/fotoProfile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bgInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bgProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40pxh"
+        android:layout_marginStart="@dimen/_27pxh"
+        android:layout_marginEnd="@dimen/_27pxh"
+        style="@style/groupStylegray_700cornerRadius">
+
+        <TextView
+            android:id="@+id/tvFullname"
+            android:layout_width="@dimen/_150pxh"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtRobotoromanbold20Bold"/>
+
+        <TextView
+            android:id="@+id/tvFullnameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_park_hanbin"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvFullname"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="@dimen/_150pxh"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFullname"
+            style="@style/txtRobotoromanbold20Bold"/>
+
+        <TextView
+            android:id="@+id/tvAgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvAge"
+            app:layout_constraintTop_toBottomOf="@id/tvFullnameText"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvSex"
+            android:layout_width="@dimen/_150pxh"
+            android:layout_height="wrap_content"
+            android:text="Sex"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAge"
+            style="@style/txtRobotoromanbold20Bold"/>
+
+        <TextView
+            android:id="@+id/tvSexText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvSex"
+            app:layout_constraintTop_toBottomOf="@id/tvAgeText"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="@dimen/_150pxh"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSex"
+            style="@style/txtRobotoromanbold20Bold"/>
+
+        <TextView
+            android:id="@+id/tvWeightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvWeight"
+            app:layout_constraintTop_toBottomOf="@id/tvSexText"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvWeightTextEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kg"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvWeightText"
+            app:layout_constraintTop_toBottomOf="@id/tvSexText"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="@dimen/_150pxh"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWeight"
+            style="@style/txtRobotoromanbold20Bold"/>
+
+        <TextView
+            android:id="@+id/tvHeightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvWeight"
+            app:layout_constraintTop_toBottomOf="@id/tvWeightText"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvHeightTextEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cm"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvHeightText"
+            app:layout_constraintTop_toBottomOf="@id/tvWeightText"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvBlood"
+            android:layout_width="@dimen/_150pxh"
+            android:layout_height="wrap_content"
+            android:text="Blood Sugar"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeight"
+            style="@style/txtRobotoromanbold20Bold"/>
+
+        <TextView
+            android:id="@+id/tvBloodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_marginTop="@dimen/_19pxh"
+            android:layout_marginBottom="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvBlood"
+            app:layout_constraintTop_toBottomOf="@id/tvHeightText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/txtRobotoromanregular20"/>
+
+        <TextView
+            android:id="@+id/tvBloodTextEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mg/dL"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_19pxh"
+            android:layout_marginBottom="@dimen/_19pxh"
+            app:layout_constraintStart_toEndOf="@id/tvBloodText"
+            app:layout_constraintTop_toBottomOf="@id/tvHeightText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/txtRobotoromanregular20"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:ellipsize="end" android:gravity="center"
+        android:id="@+id/btnSignOut"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_27pxh"
+        android:layout_marginStart="@dimen/_27pxh"
+        android:layout_marginTop="@dimen/_46pxv"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_8pxv"
+        android:paddingEnd="@dimen/_30pxh"
+        android:paddingStart="@dimen/_30pxh"
+        android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+        android:text="@string/lbl_sign_out"
+        app:layout_constraintTop_toBottomOf="@id/bgInformation"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAllCaps="false" style="@style/btnSolidRounded_6" tools:text="@string/lbl_sign_out"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

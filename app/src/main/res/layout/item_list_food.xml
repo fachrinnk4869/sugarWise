@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_food"
+    android:layout_width="@dimen/_330pxh"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rowlistfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5pxh"
+        android:layout_marginBottom="@dimen/_5pxh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/groupStylebluegray_300cornerRadius">
+
+        <TextView
+            android:id="@+id/txtfoodlist"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_10pxh"
+            android:layout_weight="0.61"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtMontserratromansemibold16"
+            tools:text="Ice Cream"/>
+
+        <TextView
+            android:id="@+id/txtfoodserv"
+            style="@style/txtMontserratromansemibold16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_weight="0.61"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtfoodlist"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/txtfoodservEnd"
+            style="@style/txtMontserratromansemibold16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_weight="0.61"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:textSize="12sp"
+            android:text="@string/lbl_1_serving"
+            app:layout_constraintStart_toEndOf="@id/txtfoodserv"
+            app:layout_constraintTop_toBottomOf="@+id/txtfoodlist"/>
+
+        <TextView
+            android:id="@+id/txtsugarcount"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_2pxh"
+            android:layout_marginStart="@dimen/_200pxh"
+            android:layout_marginTop="@dimen/_15pxh"
+            android:layout_weight="0.39"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            app:layout_constraintEnd_toStartOf="@id/txtsugarcountEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtfoodserv"
+            style="@style/txtMontserratromanmedium12_3"
+            tools:text="20"/>
+
+        <TextView
+            android:id="@+id/txtsugarcountEnd"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_15pxh"
+            android:layout_weight="0.39"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtfoodserv"
+            style="@style/txtMontserratromanmedium12_3"
+            android:text="gram"
+            tools:text="gram"/>
+
+        <TextView
+            android:id="@+id/txtsugar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxh"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_200pxh"
+            android:layout_weight="0.39"
+            android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtsugarcount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/txtMontserratromanmedium12_3"
+            android:text="Sugar"
+            tools:text="Sugar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
