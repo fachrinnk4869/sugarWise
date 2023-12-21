@@ -15,10 +15,14 @@ Team Member:
 ## Technologies
 * Tensorflow
 * InceptionV3
-* keras
-* firebase
-* Node.js
+* Keras
+* Firebase
+* Node Js
+* Express Js
+* Fast API
+* Flask
 * CameraX
+* Jetpack ViewModel/LiveData
 
 ## Setup
 Follow these steps to run this project:
