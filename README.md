@@ -32,9 +32,7 @@ Follow these steps to run this project:
 git clone -b mobille_dev https://github.com/fachrinnk4869/sugarWise.git
 ```
 
-2. 	Install the Android Studio [here](https://developer.android.com/studio)
-
-&nbsp;Note: This step assumes you have android studio installed. If not, you may need to download and install them first.
+2. Download APK [here]([https://developer.android.com/studio](https://drive.google.com/file/d/19y7v32eq2ADw6MM80plG-flwqBE6a943/view?usp=sharing))
 
 ## Usage
 1. The homepage will statistics and list food that hace been eaten.
